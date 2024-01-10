@@ -209,9 +209,6 @@ if(document.querySelector('#formMain')) {
                 document.querySelector('#formMain .more-details__form-btn').classList.add('disabled')
             }
         }
-        else {
-            form.preventDefault()
-        }
     });
 
 }
