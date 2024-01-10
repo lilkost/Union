@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+  <link rel="manifest" href="fav/site.webmanifest">
+  <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#ffc700">
+  <meta name="msapplication-TileColor" content="#ffc700">
+  <meta name="msapplication-TileImage" content="fav/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/media.min.css">
+  <script src="js/main.min.js"></script>
+  <script src="js/index.js" defer></script>
+  <script type="module" src="js/dynamicModule.js" ></script>
+</head>
+
+<body>
+
+  <!-- wrapper -->
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__inner container">
+        <div class="burger">
+          <svg width="32" height="19" viewBox="0 0 32 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="2" fill="#131313"/>
+            <rect y="9" width="32" height="2" fill="#131313"/>
+            <rect y="17" width="32" height="2" fill="#131313"/>
+          </svg>            
+        </div>
+        <p class="mobile-text">
+          Официальное такси
+        </p>
+        <a href="#" class="logo">
+          <img src="images/logo.svg" alt="Union logo">
+        </a>
+        <nav class="menu" data-da=".header-menu, 920, 1">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="/">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="tarif.html">Тарифы</a>
+            </li>
+            <li class="menu__item">
+              <a href="top1.html">Трезвый водитель</a>
+            </li>
+            <li class="menu__item">
+              <a href="top2.html">Прикурить авто</a>
+            </li>
+            <li class="menu__item">
+              <a href="top3.html">Выездной шиномонтаж</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="phone" href="tel:+79302914222">+7-930-291-42-22</a>
+        <button class="header__btn btn btn__yellow open-modal">Заказать автомобиль</button>
+      </div>
+      <div class="header-menu">
+        <button class="header-menu__close"> 
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L25 25" stroke="black" stroke-width="2"/>
+            <path d="M25 1L1 25" stroke="black" stroke-width="2"/>
+          </svg>            
+        </button>
+      </div>
+    </header>
+<style>
+    .header{
+        margin-bottom: 54px;
+    }
+</style>
+<main class="main">
+    <section class="tarif">
+        <div class="tarif-top">
+            <div class="tarif-top__inner container">
+                <div class="tarif__info">
+                    <h2 class="tarif__title title">Тарифы</h2>
+                    <p class="tarif__text text_big">
+                        Мы предлагаем тарифы<br>
+                        под любой бюджет и случай.<br>
+                        Заказывайте нужный тариф,<br> 
+                        а мы позаботимся о вашем комфорте! <br>
+                    </p>
+                </div>
+                <picture class="tarif__image">
+                    <img class="tarif__image_big" src="images/tarif/1.png" alt="">
+                    <img class="tarif__image_min" src="images/tarif/1_min.png" alt="">
+                </picture>
+            </div>
+        </div>
+        <ul class="tarif__list container">
+            <li class="tarif__item">
+                <div class="tarif__item-left tarif__item-left-1">
+                    <h3 class="tarif__item-title">Эконом</h3>
+                    <img src="../images/tarif/2.png" alt="">
+                </div>
+                <div class="tarif__item-right">
+                    <p class="tarif__item-text">
+                        Эконом-тариф такси - это самый доступный и бюджетный вариант. Он предлагает недорогую стоимость проезда с использованием стандартных и удобных машин.
+                    </p>
+                    <div class="tarif__item-bottom" data-da=".tarif__item-left-1, 620,2">
+                        <ul>
+                            <li>подача — 49 руб</li>
+                            <li>1 км — 45 руб</li>
+                            <li>минута в пути — 25 руб</li>
+                        </ul>
+                        <button class="tarif__item-btn open-modal btn btn__yellow">Заказать эконом</button>
+                    </div>
+                    <button class="tarif__item-open">
+                        <svg width="33" height="15" viewBox="0 0 33 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L16.2542 12L31 2" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                        </svg>                            
+                    </button>
+                </div>
+            </li>
+            <li class="tarif__item">
+                <div class="tarif__item-left tarif__item-left-2">
+                    <h3 class="tarif__item-title">Комфорт</h3>
+                    <img src="../images/tarif/3.png" alt="">
+                </div>
+                <div class="tarif__item-right">
+                    <p class="tarif__item-text">
+                        Комфорт-тариф такси предлагает своим клиентам удобство и комфорт во время поездки. Этот тариф обеспечивает использование автомобилей высокого класса с улучшенным уровнем комфорта.
+                    </p>
+                    <div class="tarif__item-bottom" data-da=".tarif__item-left-2, 620,2">
+                        <ul>
+                            <li>подача — 200 руб</li>
+                            <li>1 км — 60 руб</li>
+                            <li>минута в пути — 50 руб</li>
+                        </ul>
+                        <button class="tarif__item-btn open-modal btn btn__yellow">Заказать комфорт</button>
+                    </div>
+                    <button class="tarif__item-open">
+                        <svg width="33" height="15" viewBox="0 0 33 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L16.2542 12L31 2" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                        </svg>                            
+                    </button>
+                </div>
+            </li>
+            <li class="tarif__item">
+                <div class="tarif__item-left tarif__item-left-3">
+                    <h3 class="tarif__item-title">Бизнес</h3>
+                    <img src="../images/tarif/4.png" alt="">
+                </div>
+                <div class="tarif__item-right">
+                    <p class="tarif__item-text">
+                        Бизнес - тариф такси означает, что клиенты могут воспользоваться комфортабельными автомобилями бизнес-класса, благодаря чему они могут насладиться высоким уровнем комфорта и безопасности.
+                    </p>
+                    <div class="tarif__item-bottom" data-da=".tarif__item-left-3, 620,2">
+                        <ul>
+                            <li>подача — 300 руб</li>
+                            <li>1 км — 90 руб</li>
+                            <li>минута в пути — 70 руб</li>
+                        </ul>
+                        <button class="tarif__item-btn open-modal btn btn__yellow">Заказать бизнес</button>
+                    </div>
+                    <button class="tarif__item-open">
+                        <svg width="33" height="15" viewBox="0 0 33 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L16.2542 12L31 2" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                        </svg>                            
+                    </button>
+                </div>
+            </li>
+            <li class="tarif__item">
+                <div class="tarif__item-left tarif__item-left-4">
+                    <h3 class="tarif__item-title">Минивэн</h3>
+                    <img src="../images/tarif/5.png" alt="">
+                </div>
+                <div class="tarif__item-right">
+                    <p class="tarif__item-text">
+                        Минивэн-тариф такси предоставляет возможность аренды комфортабельного и просторного автомобиля для перевозки большого количества пассажиров или крупных грузов. 
+                    </p>
+                    <div class="tarif__item-bottom" data-da=".tarif__item-left-4, 620,2">
+                        <ul>
+                            <li>от 1000 рублей</li>
+                        </ul>
+                        <button class="tarif__item-btn open-modal btn btn__yellow">Заказать минивэн</button>
+                    </div>
+                    <button class="tarif__item-open">
+                        <svg width="33" height="15" viewBox="0 0 33 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L16.2542 12L31 2" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                        </svg>                            
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </section>
+</main>
+    <footer class="footer">
+        <div class="footer__inner container">
+            <a class="footer__logo" href="/">
+                <img src="images/logo.svg" alt="">
+            </a>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <p>
+                        Навигация
+                    </p>
+                </li>
+                <li class="footer__item">
+                    <a href="/">Главная</a>
+                </li>
+                <li class="footer__item">
+                    <a href="tarif.html">Тарифы</a>
+                </li>
+                <li class="footer__item">
+                    <a href="top1.html">Трезвый водитель</a>
+                </li>
+                <li class="footer__item">
+                    <a href="top2.html">Прикурить авто</a>
+                </li>
+                <li class="footer__item">
+                    <a href="top3.html">Выездной шиномонтаж</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <p>
+                        Тарифы
+                    </p>
+                </li>
+                <li class="footer__item">
+                    <a href="#!">Эконом</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#!">Комфорт</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#!">Бизнес</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#!">Минивэн</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <p>
+                        Контакты
+                    </p>
+                </li>
+                <li class="footer__item">
+                    <a href="tel:+79302914222">+7-930-291-42-22</a>
+                </li>
+                <li class="footer__item">
+                    <a class="link-line" href="mailto:taxi-city152@yandex.ru">taxi-city152@yandex.ru</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <dialog open="true" class="modal modal_hidden">
+        <div class="modal__container">
+            <button class="modal__close">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L25 25" stroke="black" stroke-width="2"/>
+                    <path d="M25 1L1 25" stroke="black" stroke-width="2"/>
+                </svg>                    
+            </button>
+            <form class="more-details__form" id="modalForm">
+                <div class="more-details__form-container">
+                <div class="more-details__title more-details__form-title">
+                    Заказать такси
+                </div>
+                <fieldset class="more-details__form-top">
+                    <label for="rad_1" class="btn btn__gray">
+                    Эконом
+                    <input type="radio" name="rad1" id="rad_1" checked>
+                    </label>
+                    <label for="rad_2" class="btn btn__gray">
+                    Комфорт
+                    <input type="radio" name="rad1" id="rad_2">
+                    </label>
+                    <label for="rad_3" class="btn btn__gray">
+                    Бизнес
+                    <input type="radio" name="rad1" id="rad_3">
+                    </label>
+                    <label for="rad_4" class="btn btn__gray">
+                    Минивэн
+                    <input type="radio" name="rad1" id="rad_4">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="" class="more-details__form-label  more-details__form-label_1" data-text-error="*обязательное поле">
+                        <input class="input-validate phoneMask" type="tel" placeholder="Телефон" >
+                      </label>
+                      <label for="" class="more-details__form-label more-details__form-label_2 error" data-text-error="*обязательное поле">
+                        <input class="input-validate" type="text" placeholder="Откуда" >
+                      </label>
+                      <label for="" class="more-details__form-label  more-details__form-label_3" data-text-error="*обязательное поле">
+                        <input class="input-validate" type="text" placeholder="Куда" >
+                      </label>
+                      <label for="" class="more-details__form-label  more-details__form-label_4" data-text-error="*обязательное поле">
+                        <p>Дата и время</p>
+                        <input class="input-validate input-date" type="datetime-local" placeholder="Дата и время" >
+                    </label>
+                </fieldset>
+                <fieldset class="more-details__form-bottom">
+                    <label for="chec_1_modal" data-text-error="*поставьте галочку">
+                        <input class="more-details__form-check" type="checkbox" name="" id="chec_1_modal">
+                        <span></span>
+                        <p>Я согласен на обработку персональных данных</p>
+                    </label>
+                    <button class="more-details__form-btn disabled btn" type="submit">Отправить</button>
+                </fieldset>
+                </div>
+            </form>
+        </div>
+    </dialog>
+</div>
+
+
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

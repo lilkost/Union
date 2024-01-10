@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+  <link rel="manifest" href="fav/site.webmanifest">
+  <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#ffc700">
+  <meta name="msapplication-TileColor" content="#ffc700">
+  <meta name="msapplication-TileImage" content="fav/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/media.min.css">
+  <script src="js/main.min.js"></script>
+  <script src="js/index.js" defer></script>
+  <script type="module" src="js/dynamicModule.js" ></script>
+</head>
+
+<body>
+
+  <!-- wrapper -->
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__inner container">
+        <div class="burger">
+          <svg width="32" height="19" viewBox="0 0 32 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="2" fill="#131313"/>
+            <rect y="9" width="32" height="2" fill="#131313"/>
+            <rect y="17" width="32" height="2" fill="#131313"/>
+          </svg>            
+        </div>
+        <p class="mobile-text">
+          Официальное такси
+        </p>
+        <a href="#" class="logo">
+          <img src="images/logo.svg" alt="Union logo">
+        </a>
+        <nav class="menu" data-da=".header-menu, 920, 1">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="/">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="tarif.html">Тарифы</a>
+            </li>
+            <li class="menu__item">
+              <a href="top1.html">Трезвый водитель</a>
+            </li>
+            <li class="menu__item">
+              <a href="top2.html">Прикурить авто</a>
+            </li>
+            <li class="menu__item">
+              <a href="top3.html">Выездной шиномонтаж</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="phone" href="tel:+79302914222">+7-930-291-42-22</a>
+        <button class="header__btn btn btn__yellow open-modal">Заказать автомобиль</button>
+      </div>
+      <div class="header-menu">
+        <button class="header-menu__close"> 
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L25 25" stroke="black" stroke-width="2"/>
+            <path d="M25 1L1 25" stroke="black" stroke-width="2"/>
+          </svg>            
+        </button>
+      </div>
+    </header>
+<style>
+    .header{
+        margin-bottom: 0;
+    }
+</style>
+<main class="main">
+    <div class="error-page">
+        <svg width="476" height="248" viewBox="0 0 476 248" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M89.0685 244.556V182.556H0V155L85.6428 3.44444H119.9V158.444H140.454V182.556H119.9V244.556H89.0685ZM29.1185 158.444H89.0685V53.3889H87.6982L29.1185 158.444Z" fill="url(#paint0_linear_225_1018)"/>
+            <path d="M237.993 248C223.834 248 211.387 244.441 200.653 237.322C190.148 229.974 182.04 217.344 176.33 199.433C170.621 181.293 167.766 156.148 167.766 124C167.766 91.8519 170.621 66.8222 176.33 48.9111C182.04 30.7704 190.148 18.1407 200.653 11.0222C211.387 3.67407 223.834 0 237.993 0C252.381 0 264.828 3.67407 275.334 11.0222C285.839 18.1407 293.947 30.7704 299.656 48.9111C305.366 66.8222 308.22 91.8519 308.22 124C308.22 156.148 305.366 181.293 299.656 199.433C293.947 217.344 285.839 229.974 275.334 237.322C264.828 244.441 252.381 248 237.993 248ZM237.993 227.333C242.789 227.333 247.471 225.841 252.039 222.856C256.606 219.641 260.831 214.244 264.714 206.667C268.596 199.089 271.679 188.641 273.963 175.322C276.247 161.774 277.389 144.667 277.389 124C277.389 103.333 276.247 86.3407 273.963 73.0222C271.679 59.4741 268.596 48.9111 264.714 41.3333C260.831 33.7556 256.606 28.4741 252.039 25.4889C247.471 22.2741 242.789 20.6667 237.993 20.6667C233.197 20.6667 228.515 22.2741 223.948 25.4889C219.38 28.4741 215.155 33.7556 211.273 41.3333C207.39 48.9111 204.307 59.4741 202.023 73.0222C199.74 86.3407 198.598 103.333 198.598 124C198.598 144.667 199.74 161.774 202.023 175.322C204.307 188.641 207.39 199.089 211.273 206.667C215.155 214.244 219.38 219.641 223.948 222.856C228.515 225.841 233.197 227.333 237.993 227.333Z" fill="url(#paint1_linear_225_1018)"/>
+            <path d="M424.614 244.556V182.556H335.546V155L421.189 3.44444H455.446V158.444H476V182.556H455.446V244.556H424.614ZM364.664 158.444H424.614V53.3889H423.244L364.664 158.444Z" fill="url(#paint2_linear_225_1018)"/>
+            <defs>
+            <linearGradient id="paint0_linear_225_1018" x1="0" y1="0" x2="203.251" y2="390.106" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFC700"/>
+            <stop offset="1" stop-color="#FF9900"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear_225_1018" x1="0" y1="0" x2="203.251" y2="390.106" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFC700"/>
+            <stop offset="1" stop-color="#FF9900"/>
+            </linearGradient>
+            <linearGradient id="paint2_linear_225_1018" x1="0" y1="0" x2="203.251" y2="390.106" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFC700"/>
+            <stop offset="1" stop-color="#FF9900"/>
+            </linearGradient>
+            </defs>
+        </svg>         
+        <h2 class="error-page__title">
+            Ошибка :(
+        </h2>  
+    </div>
+</main>
+    <footer class="footer">
+        <div class="footer__inner container">
+            <a class="footer__logo" href="/">
+                <img src="images/logo.svg" alt="">
+            </a>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <p>
+                        Навигация
+                    </p>
+                </li>
+                <li class="footer__item">
+                    <a href="/">Главная</a>
+                </li>
+                <li class="footer__item">
+                    <a href="tarif.html">Тарифы</a>
+                </li>
+                <li class="footer__item">
+                    <a href="top1.html">Трезвый водитель</a>
+                </li>
+                <li class="footer__item">
+                    <a href="top2.html">Прикурить авто</a>
+                </li>
+                <li class="footer__item">
+                    <a href="top3.html">Выездной шиномонтаж</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <p>
+                        Тарифы
+                    </p>
+                </li>
+                <li class="footer__item">
+                    <a href="#!">Эконом</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#!">Комфорт</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#!">Бизнес</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#!">Минивэн</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <p>
+                        Контакты
+                    </p>
+                </li>
+                <li class="footer__item">
+                    <a href="tel:+79302914222">+7-930-291-42-22</a>
+                </li>
+                <li class="footer__item">
+                    <a class="link-line" href="mailto:taxi-city152@yandex.ru">taxi-city152@yandex.ru</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <dialog open="true" class="modal modal_hidden">
+        <div class="modal__container">
+            <button class="modal__close">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L25 25" stroke="black" stroke-width="2"/>
+                    <path d="M25 1L1 25" stroke="black" stroke-width="2"/>
+                </svg>                    
+            </button>
+            <form class="more-details__form" id="modalForm">
+                <div class="more-details__form-container">
+                <div class="more-details__title more-details__form-title">
+                    Заказать такси
+                </div>
+                <fieldset class="more-details__form-top">
+                    <label for="rad_1" class="btn btn__gray">
+                    Эконом
+                    <input type="radio" name="rad1" id="rad_1" checked>
+                    </label>
+                    <label for="rad_2" class="btn btn__gray">
+                    Комфорт
+                    <input type="radio" name="rad1" id="rad_2">
+                    </label>
+                    <label for="rad_3" class="btn btn__gray">
+                    Бизнес
+                    <input type="radio" name="rad1" id="rad_3">
+                    </label>
+                    <label for="rad_4" class="btn btn__gray">
+                    Минивэн
+                    <input type="radio" name="rad1" id="rad_4">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="" class="more-details__form-label  more-details__form-label_1" data-text-error="*обязательное поле">
+                        <input class="input-validate phoneMask" type="tel" placeholder="Телефон" >
+                      </label>
+                      <label for="" class="more-details__form-label more-details__form-label_2 error" data-text-error="*обязательное поле">
+                        <input class="input-validate" type="text" placeholder="Откуда" >
+                      </label>
+                      <label for="" class="more-details__form-label  more-details__form-label_3" data-text-error="*обязательное поле">
+                        <input class="input-validate" type="text" placeholder="Куда" >
+                      </label>
+                      <label for="" class="more-details__form-label  more-details__form-label_4" data-text-error="*обязательное поле">
+                        <p>Дата и время</p>
+                        <input class="input-validate input-date" type="datetime-local" placeholder="Дата и время" >
+                    </label>
+                </fieldset>
+                <fieldset class="more-details__form-bottom">
+                    <label for="chec_1_modal" data-text-error="*поставьте галочку">
+                        <input class="more-details__form-check" type="checkbox" name="" id="chec_1_modal">
+                        <span></span>
+                        <p>Я согласен на обработку персональных данных</p>
+                    </label>
+                    <button class="more-details__form-btn disabled btn" type="submit">Отправить</button>
+                </fieldset>
+                </div>
+            </form>
+        </div>
+    </dialog>
+</div>
+
+
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
