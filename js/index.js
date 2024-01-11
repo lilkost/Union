@@ -164,12 +164,6 @@ if(document.querySelector('.tire-service')) {
         parent.classList.toggle('parent-open')
     })
 }
-// form validate
-// проверка email на валидность
-function validateEmail(email) {
-    let a = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return a.test(String(email).toLowerCase());
-}
 // mainForm
 if(document.querySelector('.input-validate')) {
     let inputs = document.querySelectorAll('.input-validate');
@@ -180,13 +174,9 @@ if(document.querySelector('.input-validate')) {
         })
     })
 }
-
 if(document.querySelector('#formMain')) {
     var form = $('#formMain');
     var inputs = form.find('.input-validate');
-    form.onsubmit = function() {
-        return false
-    }
     form.change(function(){
         var status = [];
         inputs.each(function(){
@@ -214,12 +204,11 @@ if(document.querySelector('#formMain')) {
 }
 
 if(document.querySelector('#modalForm')) {
-    var form = $('#modalForm');
-    var inputs = form.find('.input-validate');
-    console.log(form,inputs)
-    form.change(function(){
+    var form1 = $('#modalForm');
+    var inputs1 = form1.find('.input-validate');
+    form1.change(function(){
         var status = [];
-        inputs.each(function(){
+        inputs1.each(function(){
             if(this.value == '' ){
                 return status.push('no');
             }
