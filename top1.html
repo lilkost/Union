@@ -36,13 +36,13 @@
         <p class="mobile-text">
           Официальное такси
         </p>
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <img src="images/logo.svg" alt="Union logo">
         </a>
         <nav class="menu" data-da=".header-menu, 920, 1">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="/">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="menu__item">
               <a href="tarif.html">Тарифы</a>
@@ -59,7 +59,7 @@
           </ul>
         </nav>
         <a class="phone" href="tel:+79302914222">+7-930-291-42-22</a>
-        <button class="header__btn btn btn__yellow open-modal">Заказать автомобиль</button>
+        <button class="header__btn btn btn__yellow">Заказать автомобиль</button>
       </div>
       <div class="header-menu">
         <button class="header-menu__close"> 
@@ -108,7 +108,7 @@
 </main>
     <footer class="footer">
         <div class="footer__inner container">
-            <a class="footer__logo" href="/">
+            <a class="footer__logo" href="index.html">
                 <img src="images/logo.svg" alt="">
             </a>
             <ul class="footer__list">
@@ -118,7 +118,7 @@
                     </p>
                 </li>
                 <li class="footer__item">
-                    <a href="/">Главная</a>
+                    <a href="index.html">Главная</a>
                 </li>
                 <li class="footer__item">
                     <a href="tarif.html">Тарифы</a>
@@ -180,6 +180,64 @@
                 <div class="more-details__title more-details__form-title">
                     Заказать такси
                 </div>
+                <!-- <fieldset class="more-details__form-top">
+                    <label for="rad_1" class="btn btn__gray">
+                    Эконом
+                    <input type="radio" name="rad1" id="rad_1" checked>
+                    </label>
+                    <label for="rad_2" class="btn btn__gray">
+                    Комфорт
+                    <input type="radio" name="rad1" id="rad_2">
+                    </label>
+                    <label for="rad_3" class="btn btn__gray">
+                    Бизнес
+                    <input type="radio" name="rad1" id="rad_3">
+                    </label>
+                    <label for="rad_4" class="btn btn__gray">
+                    Минивэн
+                    <input type="radio" name="rad1" id="rad_4">
+                    </label>
+                </fieldset> -->
+                <fieldset>
+                    <label for="" class="more-details__form-label  more-details__form-label_1" data-text-error="*обязательное поле">
+                        <input class="input-validate phoneMask" type="tel" placeholder="Телефон" >
+                      </label>
+                      <label for="" class="more-details__form-label more-details__form-label_2 error" data-text-error="*обязательное поле">
+                        <input class="input-validate" type="text" placeholder="Откуда" >
+                      </label>
+                      <label for="" class="more-details__form-label  more-details__form-label_3" data-text-error="*обязательное поле">
+                        <input class="input-validate" type="text" placeholder="Куда" >
+                      </label>
+                      <!-- <label for="" class="more-details__form-label  more-details__form-label_4" data-text-error="*обязательное поле">
+                        <p>Дата и время</p>
+                        <input class="input-validate input-date" type="datetime-local" placeholder="Дата и время" >
+                    </label> -->
+                </fieldset>
+                <fieldset class="more-details__form-bottom">
+                    <label for="chec_1_modal" data-text-error="*поставьте галочку">
+                        <input class="more-details__form-check" type="checkbox" name="" id="chec_1_modal">
+                        <span></span>
+                        <p>Я согласен на обработку персональных данных</p>
+                    </label>
+                    <button class="more-details__form-btn disabled btn" type="submit">Отправить</button>
+                </fieldset>
+                </div>
+            </form>
+        </div>
+    </dialog>
+    <dialog open="true" class="modal-main modal_hidden">
+        <div class="modal__container">
+            <button class="modal__close">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L25 25" stroke="black" stroke-width="2"/>
+                    <path d="M25 1L1 25" stroke="black" stroke-width="2"/>
+                </svg>                    
+            </button>
+            <form class="more-details__form" id="modalFormMain">
+                <div class="more-details__form-container">
+                <div class="more-details__title more-details__form-title">
+                    Заказать такси
+                </div>
                 <fieldset class="more-details__form-top">
                     <label for="rad_1" class="btn btn__gray">
                     Эконом
@@ -208,14 +266,14 @@
                       <label for="" class="more-details__form-label  more-details__form-label_3" data-text-error="*обязательное поле">
                         <input class="input-validate" type="text" placeholder="Куда" >
                       </label>
-                      <label for="" class="more-details__form-label  more-details__form-label_4" data-text-error="*обязательное поле">
+                      <!-- <label for="" class="more-details__form-label  more-details__form-label_4" data-text-error="*обязательное поле">
                         <p>Дата и время</p>
                         <input class="input-validate input-date" type="datetime-local" placeholder="Дата и время" >
-                    </label>
+                    </label> -->
                 </fieldset>
                 <fieldset class="more-details__form-bottom">
-                    <label for="chec_1_modal" data-text-error="*поставьте галочку">
-                        <input class="more-details__form-check" type="checkbox" name="" id="chec_1_modal">
+                    <label for="chec_2_modal" data-text-error="*поставьте галочку">
+                        <input class="more-details__form-check" type="checkbox" name="" id="chec_2_modal">
                         <span></span>
                         <p>Я согласен на обработку персональных данных</p>
                     </label>

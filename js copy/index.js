@@ -76,76 +76,20 @@ if(document.querySelector('.open-modal') && document.querySelector('.modal')) {
     })
 
     btnClose.addEventListener('click', ()=> {
-        modal.classList.add('modal_hidden');
-        document.querySelector('.modal').querySelectorAll('.input-validate').forEach(input=> {
-            input.value =''
-        })
-        document.querySelector('.modal').querySelector('.more-details__form-bottom').classList.add('disabled');
-        document.querySelector('.modal').querySelector('.more-details__form-check').checked = false;
+        modal.classList.add('modal_hidden')
     })
 
     window.addEventListener('click', (e)=> {
         if(e.target.className == 'modal'){
             modal.classList.add('modal_hidden')
-            document.querySelector('.modal').querySelectorAll('.input-validate').forEach(input=> {
-                input.value =''
-            })
-            document.querySelector('.modal').querySelector('.more-details__form-bottom').classList.add('disabled');
-            document.querySelector('.modal').querySelector('.more-details__form-check').checked = false;
-        }
-
-    })
-
-    document.addEventListener("keydown", (e) => {
-        if (e.code == "Escape") {
-            modal.classList.add('modal_hidden')
-            document.querySelector('.modal').querySelectorAll('.input-validate').forEach(input=> {
-                input.value =''
-            })
-            document.querySelector('.modal').querySelector('.more-details__form-bottom').classList.add('disabled');
-            document.querySelector('.modal').querySelector('.more-details__form-check').checked = false;
-        }
-    });
-}
-if(document.querySelector('.header__btn') && document.querySelector('.modal-main')) {
-    let modal = document.querySelector('.modal-main')
-    let btnOpenModals = document.querySelector('.header__btn')
-    let btnClose = modal.querySelector('.modal__close')
-
-    btnOpenModals.addEventListener('click', ()=> {
-        modal.classList.remove('modal_hidden')
-    })
-
-    btnClose.addEventListener('click', ()=> {
-        modal.classList.add('modal_hidden');
-        document.querySelector('.modal-main').querySelectorAll('.input-validate').forEach(input=> {
-            input.value =''
-        })
-        document.querySelector('.modal-main').querySelector('.more-details__form-bottom').classList.add('disabled');
-        document.querySelector('.modal-main').querySelector('.more-details__form-check').checked = false;
-    })
-
-    window.addEventListener('click', (e)=> {
-        if(e.target.className == 'modal-main'){
-            modal.classList.add('modal_hidden')
-            document.querySelector('.modal-main').querySelectorAll('.input-validate').forEach(input=> {
-                input.value =''
-            })
-            document.querySelector('.modal-main').querySelector('.more-details__form-bottom').classList.add('disabled');
-            document.querySelector('.modal-main').querySelector('.more-details__form-check').checked = false;
         }
     })
 
     document.addEventListener("keydown", (e) => {
         if (e.code == "Escape") {
             modal.classList.add('modal_hidden')
-            document.querySelector('.modal-main').querySelectorAll('.input-validate').forEach(input=> {
-                input.value =''
-            })
-            document.querySelector('.modal-main').querySelector('.more-details__form-bottom').classList.add('disabled');
-            document.querySelector('.modal-main').querySelector('.more-details__form-check').checked = false;
         }
-    });
+      });
 }
 // header bureger
 if(document.querySelector('.header-menu')) {
@@ -220,6 +164,12 @@ if(document.querySelector('.tire-service')) {
         parent.classList.toggle('parent-open')
     })
 }
+// form validate
+// проверка email на валидность
+function validateEmail(email) {
+    let a = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return a.test(String(email).toLowerCase());
+}
 // mainForm
 if(document.querySelector('.input-validate')) {
     let inputs = document.querySelectorAll('.input-validate');
@@ -230,9 +180,13 @@ if(document.querySelector('.input-validate')) {
         })
     })
 }
+
 if(document.querySelector('#formMain')) {
     var form = $('#formMain');
     var inputs = form.find('.input-validate');
+    form.onsubmit = function() {
+        return false
+    }
     form.change(function(){
         var status = [];
         inputs.each(function(){
@@ -255,15 +209,20 @@ if(document.querySelector('#formMain')) {
                 document.querySelector('#formMain .more-details__form-btn').classList.add('disabled')
             }
         }
+        else {
+            form.preventDefault()
+        }
     });
 
 }
+
 if(document.querySelector('#modalForm')) {
-    var form1 = $('#modalForm');
-    var inputs1 = form1.find('.input-validate');
-    form1.change(function(){
+    var form = $('#modalForm');
+    var inputs = form.find('.input-validate');
+    console.log(form,inputs)
+    form.change(function(){
         var status = [];
-        inputs1.each(function(){
+        inputs.each(function(){
             if(this.value == '' ){
                 return status.push('no');
             }
@@ -273,7 +232,7 @@ if(document.querySelector('#modalForm')) {
             console.log(status)
         });
         console.log(status);
-        if(status[0] == 'ok' && status[1] == 'ok' && status[2] == 'ok'){
+        if(status[0] == 'ok' && status[1] == 'ok' && status[2] == 'ok' && status[3] == 'ok'){
             console.log('All ok');
             
             if(document.querySelector('#modalForm .more-details__form-check').checked == true) {
@@ -281,37 +240,6 @@ if(document.querySelector('#modalForm')) {
             }
             else{
                 document.querySelector('#modalForm .more-details__form-btn').classList.add('disabled')
-
-            }
-        }
-    });
-
-}
-
-// modalFormMain
-if(document.querySelector('#modalFormMain')) {
-    var form1 = $('#modalFormMain');
-    var inputs1 = form1.find('.input-validate');
-    form1.change(function(){
-        var status = [];
-        inputs1.each(function(){
-            if(this.value == '' ){
-                return status.push('no');
-            }
-            else{
-                return status.push('ok');
-            }
-            console.log(status)
-        });
-        console.log(status);
-        if(status[0] == 'ok' && status[1] == 'ok' && status[2] == 'ok'){
-            console.log('All ok');
-            
-            if(document.querySelector('#modalFormMain .more-details__form-check').checked == true) {
-                document.querySelector('#modalFormMain .more-details__form-btn').classList.remove('disabled')
-            }
-            else{
-                document.querySelector('#modalFormMain .more-details__form-btn').classList.add('disabled')
 
             }
         }
